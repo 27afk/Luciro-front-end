@@ -4,17 +4,24 @@ Key features
 - 64 bit memory model
 - simple Scope Management
 - Arrays
+
+---------------------------------------------------------------------------------------------------------------------------
+
 Architecture
+---------------------------------------------------------------------------------------------------------------------------
 Lexer
 - a simple TokenType class to help with simple token lexing
 - flow control like while loop and if statements
+---------------------------------------------------------------------------------------------------------------------------
 Parser
 - Uses an AST to represent the lexed tokens
 - Uses a separate clothesline model to save data of the nodes and to avoid memory leaks
+---------------------------------------------------------------------------------------------------------------------------
 Semantic Analysis
 - Type Checking: Ensures compatibility between targets and sources during assignments.
 - Size Calculation: Looks up struct blueprints in a structRegistry to determine exact byte requirements.
 - Offset Mapping: Assigns nextOffset values to variables and function parameters to define their location in the stack frame.
+---------------------------------------------------------------------------------------------------------------------------
 Symbol Table
 - Type Information: Primitives, Arrays, or Structs.
 - Memory Metadata: Stack offsets and total sizes.
